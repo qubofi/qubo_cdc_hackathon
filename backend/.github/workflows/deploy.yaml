@@ -1,0 +1,21 @@
+name: Deploy AWS
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        with:
+          host: '18.143.189.118'
+          username: ubuntu
+          key: ${{ secrets.KEY }}
+          script: sh ~/qubo-backend/deploy.sh
+          debug: true
