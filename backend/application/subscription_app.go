@@ -34,7 +34,7 @@ func (subscriptionApp *SubscriptionApp) SaveSubscription(subscription *entity.Su
 	if err != nil {
 		return nil, err
 	}
-	// Create subscription in smart contract
+	// TODO: Create subscription in smart contract through middleware
 
 	// add to scheduler to trigger smart contract
 	s := gocron.NewScheduler(time.UTC)
@@ -69,6 +69,8 @@ func (subscriptionApp *SubscriptionApp) CancelSubscription(id uint64) error {
 	if err != nil {
 		return err
 	}
+
+	// TODO: trigger smart contract middleware to cancel subscription and remove scheduled job
 
 	return nil
 }
