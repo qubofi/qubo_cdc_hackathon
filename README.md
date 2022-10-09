@@ -9,3 +9,10 @@ This repository consists of our submission for the Crypto.com next gen student h
 The frontend is built using react, the backend is built with go. 
 
 The subscriptions functionality is implemented on a smart contract and we have a node middleware built to interact with the smart contract.
+
+
+# Presentation
+Our slides can be found here: https://www.canva.com/design/DAFOh2hZ5AU/MZ_hc0E0fcl5Lqjrp43KZw/view?utm_content=DAFOh2hZ5AU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
+# API Documentation
+https://cuboid.gitbook.io/qubo/ 
