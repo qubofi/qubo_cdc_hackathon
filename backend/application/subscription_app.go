@@ -3,6 +3,9 @@ package application
 import (
 	"qubo/qubo-backend/domain/entity"
 	"qubo/qubo-backend/infrastructure/service_impl"
+	"time"
+
+	"github.com/go-co-op/gocron"
 )
 
 type SubscriptionAppInterface interface {
@@ -31,6 +34,11 @@ func (subscriptionApp *SubscriptionApp) SaveSubscription(subscription *entity.Su
 	if err != nil {
 		return nil, err
 	}
+	// Create subscription in smart contract
+
+	// add to scheduler to trigger smart contract
+	s := gocron.NewScheduler(time.UTC)
+	s.Every(1).Month().Do(subscriptionApp.subscriptionServiceImpl.TriggerSmartContract, newSubscription)
 
 	return newSubscription, nil
 }

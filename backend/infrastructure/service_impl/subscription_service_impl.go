@@ -69,3 +69,8 @@ func (subscriptionRepo *SubscriptionServiceImpl) GetSubscriptionsByMerchantId(id
 
 	return subscriptions, nil
 }
+
+func (subscriptionRepo *SubscriptionServiceImpl) TriggerSmartContract(subscription *entity.Subscription) error {
+	// Trigger smart contract method executePayment
+	return nil
+}
