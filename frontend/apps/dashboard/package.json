@@ -1,0 +1,86 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@qubo-frontend/components": "file:./../../features/components",
+    "@radix-ui/colors": "^0.1.7",
+    "@stitches/react": "^1.2.8",
+    "@types/node": "^16.4.13",
+    "@types/react-helmet": "^6.1.5",
+    "axios": "^0.21.1",
+    "boxicons": "^2.0.7",
+    "classnames": "^2.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "history": "^4.10.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-datetime": "^3.0.4",
+    "react-draggable": "^4.4.3",
+    "react-helmet": "^6.1.0",
+    "react-modal": "^3.14.3",
+    "react-multi-carousel": "^2.6.3",
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-tabs": "^3.2.2",
+    "reactjs-popup": "^2.0.4",
+    "rsuite": "^4.10.2",
+    "sass": "^1.34.1",
+    "semantic-ui-css": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.20.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "prettier": "prettier --write --config ./.prettierrc.json \"**/*.{js,jsx,ts,tsx,scss,json}\"",
+    "eslint": "eslint --config ./.eslintrc.json \"**/*.{js,jsx,ts,tsx}\" --fix",
+    "stylelint": "stylelint \"**/*.{css,scss}\" --fix",
+    "lint": "yarn eslint && yarn prettier && yarn stylelint",
+    "dev": "yarn lint && yarn start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-modal": "^3.12.1",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-swipeable-views": "^0.13.1",
+    "@types/react-tabs": "^2.3.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "@types/react": "^17.0.2"
+  }
+}
