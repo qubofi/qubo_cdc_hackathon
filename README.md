@@ -15,4 +15,4 @@ The subscriptions functionality is implemented on a smart contract and we have a
 Our slides can be found here: https://www.canva.com/design/DAFOh2hZ5AU/MZ_hc0E0fcl5Lqjrp43KZw/view?utm_content=DAFOh2hZ5AU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
 # API Documentation
-https://cuboid.gitbook.io/qubo/ 
+[API Docs](https://qubo.gitbook.io/qubo/)
